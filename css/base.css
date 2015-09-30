@@ -44,6 +44,25 @@ display: table;
 clear: both;
 }
 
+/*
+
+	2do: Marcus' clearfix 
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+*/
+
+
 /* Corrects overflow displayed oddly in IE9 */
 svg: not(: root) {
 overflow: hidden;
@@ -420,5 +439,55 @@ padding: 0.25em 1em 0.25em 0.5em !important;
 
 
 /* A simple base grid */
+
+
+.cols:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.cols {
+	display: inherit;
+}
+ 
+html[xmlns] .cols {
+	display: block;
+}
+ 
+* html .cols {
+	height: 1%;
+}
+
+.cols > .col 	{
+	float: left;
+	width: 100%;
+}
+
+.cols-2 > .col 	{
+	width: 50%;
+}
+.cols-3 > .col 	{
+	width: 33.3333%;
+}
+.cols-4 > .col 	{
+	width: 25%;
+}
+.cols-5 > .col 	{
+	width: 20%;
+}
+.cols-6 > .col 	{
+		width: 16.6666%;
+	}
+.cols-2 > .col:nth-of-type(2n+1), 
+.cols-3 > .col:nth-of-type(3n+1),
+.cols-4 > .col:nth-of-type(4n+1),
+.cols-5 > .col:nth-of-type(5n+1),  
+.cols-6 > .col:nth-of-type(6n+1) {
+	clear: left;
+}
 
 

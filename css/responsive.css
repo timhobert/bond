@@ -32,7 +32,8 @@
 	min-width: inherit;
 	}
 
-	.float-left, .float-right, section, .block, .region-footer > div, #logo, .region {
+
+	.float-left, .float-right, section, .block, .region-footer > div, #logo, .region, .cols > .col {
 	float: none;
 	width: 100%;
 	max-width: 100%;
