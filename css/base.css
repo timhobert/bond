@@ -423,23 +423,6 @@ padding: 0.25em 1em 0.25em 0.5em !important;
 }
 
 
-/* A modern grid / flexbox */
+/* A simple base grid */
 
-.group {
-position: relative;
-display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
-display: -ms-flexbox;           /* TWEENER - IE 10 */
-display: -webkit-flex;          /* NEW - Chrome */
-display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
 
-.group > div {
-margin: 0;
-padding: 1em;
-padding: 1rem;
-}
-
-.group > div:last-child {
-margin-right: 0;
-}
