@@ -1,0 +1,93 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Drupal-specific overrides -- mostly of system.theme.css and contextual.css */
+
+.form-item, .form-actions {
+	position: relative;
+	margin: 0 0 0.5em;
+}
+
+.description, div.contextual-links-wrapper ul.contextual-links {
+	font-size: 0.75em;
+	padding: 5px;
+}
+
+tr.even, tr.odd {
+	background:none;
+	border: none;
+	padding: 0;
+}
+
+tbody {
+	background: none;
+	border: none;
+}
+
+ul.tabs.primary {
+	font-family: Arial;
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+ul.tabs.primary li {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+ul.tabs.primary li a {
+	padding: 0.45em 1.5em;
+	margin: 0;
+	border-radius: 3px 3px 0 0;
+	text-transform: uppercase;
+	display: block;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+ul.tabs.primary li a.active {
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+
+ul.tabs.primary li.active a, ul.tabs.primary li a:hover, ul.tabs.primary li a:active {
+	opacity: 1;
+}

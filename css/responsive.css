@@ -1,0 +1,120 @@
+/* huge screens ----------- */
+@media screen and (min-width: 2000px) {
+
+
+}
+
+
+/* large screens ----------- */
+@media screen and (min-width: 1200px) {
+
+
+}
+
+
+/* When the screen gets a little small ----------- */
+@media screen and (max-width: 1024px) {
+
+
+}
+
+
+/* iPad portrait and smaller ----------- */
+@media screen and (max-width: 768px) {
+
+
+	.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1em;
+	padding: 0 1rem;
+	max-width: inherit;
+	min-width: inherit;
+	}
+
+	.float-left, .float-right, section, .block, .region-footer > div, #logo, .region {
+	float: none;
+	width: 100%;
+	max-width: 100%;
+	min-height: inherit;
+	height: auto;
+	padding: 0;
+	margin: 0 0 1.5em;
+	text-align: left;
+	}
+
+	#content {
+	margin: 0;
+	}
+
+
+	/* Drupal Forms including /user/login */
+
+	ul.tabs.primary {
+	border: none;
+	}
+
+	ul.tabs.primary li {
+	display: block;
+	margin: 5px 0;
+	}
+
+	ul.tabs.primary li a {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	}
+
+	.password-strength, div.form-item div.password-suggestions {
+	max-width: 100%;
+	float: none;
+	margin-bottom: 0.5em;
+	}
+
+
+	/* Responsive tables, per jquery.responsive-tables.js in the /js directory of this theme
+		excluding the calendar tables which have a class of .full
+	 */
+
+	table:not(.full) tr:first-child {
+	border-top: 2px solid rgba(0,0,0,0.075);
+	}
+
+	table:not(.full) tr.even, table:not(.full) tr.odd {
+	border-bottom: 2px solid rgba(0,0,0,0.05);
+	}
+
+	table:not(.full) th, table:not(.full) td {
+	display: block;
+	padding-left: 40%;
+	text-align: left;
+	background-color: rgba(0,0,0,0.025);
+	}
+
+	table:not(.full) tr td:before {
+	content: attr(data-content);
+	font-weight: bold;
+	width: 35%;
+	position: absolute;
+	left: 1em;
+	}
+
+	table:not(.full) tr th {
+	display: none;
+	}
+
+	table:not(.full) th.views-field-edit-node, table:not(.full) td.views-field-edit-node {
+	text-align: left;
+	}
+
+	table td {
+	min-height: 3em;
+	}
+
+	table.ui-datepicker-calendar td {
+	display: table-cell;
+	padding: 0;
+	text-align: inherit;
+	background-color: inherit;
+	}
+
+}

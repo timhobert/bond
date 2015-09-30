@@ -1,0 +1,445 @@
+/* GLOBAL */
+body {
+background: #fff;
+color: #222;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 0.875em;
+font-size: 0.875rem;
+margin: 0;
+padding: 0;
+font-weight: 300;
+line-height: 1.5;
+word-wrap: break-word;
+}
+
+.hidden {
+display: none;
+}
+
+/* apply a natural box model to all elements */
+*, :before, :after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#colorbox, #colorbox * {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+
+img {
+border: 0; /* Removes border when inside 'a' element in IE6/7/8/9 FF3. */
+-ms-interpolation-mode: bicubic; /* Improves image quality when scaled in IE7. */
+width: auto; /* IE8 bug. Requires this to work properly with max-width in scaling images. */
+max-width: 100%;
+height: auto;
+}
+
+/* A modern clearfix for IE8 and up. Per http://css-tricks.com/snippets/css/clear-fix; */
+.group:after, .clearfix:after, .view:after, .view-content:after, .region:after, .container:after, .block:after, .views-row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+svg: not(: root) {
+overflow: hidden;
+}
+
+
+/* FONTS */
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+line-height: 1.1em;
+margin: 0.5em 0;
+margin: 0.5rem 0;
+padding: 0;
+}
+
+h1 {
+font-size: 2.5em;
+font-size: 2.5rem;
+}
+
+h2, .view-grouping-header {
+font-size: 1.75em;
+font-size: 1.75rem;
+}
+
+h3 {
+font-size: 1.5em;
+font-size: 1.5rem;
+}
+
+h4, h5, h6 {
+font-size: 1.25em;
+font-size: 1.25rem;
+font-weight: bold;
+font-weight: 700;
+line-height: 1.2em;
+}
+
+p, table, .by-line, .field {
+margin: 0 0 1.5em;
+margin: 0 0 1.5rem;
+}
+
+p:last-child, .field:last-child, .node-block .field {
+margin-bottom: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+a:focus {
+outline: thin dotted;
+}
+
+a:hover, a:active {
+outline: 0;
+}
+
+/* apply common styling after reset.css */
+li ul, li ol {
+margin: 0;
+}
+
+ul, ol {
+margin: 0;
+padding: 0;
+}
+
+.content-wrapper ul, .content-wrapper ol {
+margin: 1.5em 0;
+margin: 1.5rem 0;
+padding: 0 0 0 1.5em;
+padding: 0 0 0 1.5rem;
+}
+
+ul {
+list-style-type: disc;
+}
+
+ol {
+list-style-type: decimal;
+}
+
+dl {
+margin: 0 0 1.5em;
+margin: 0 0 1.5rem;
+}
+
+dl dt {
+font-weight: 700;
+}
+
+dd {
+margin-left: 1.5em;
+margin-left: 1.5rem;
+}
+
+hr {
+border: 1px solid rgba(0,0,0,0.1);
+clear: both;
+float: none;
+height: 1px;
+margin: 0 0 1.4375em;
+margin: 0 0 1.4375rem;
+width: 100%;
+}
+
+fieldset {
+background: rgba(0,0,0,0.02);
+border: 1px solid rgba(0,0,0,0.1);
+border-radius: 4px;
+margin: 0.5em 0 1.5em;
+margin: 0.5rem 0 1.5rem;
+padding: 1em;
+padding: 1rem;
+}
+
+table {
+max-width: 100%;
+width: 100%;
+font-size: 0.875em;
+font-size: 0.875rem;
+}
+
+th, tr, td {
+vertical-align: top;
+}
+
+th, td, td.active {
+padding: 0.5em;
+padding: 0.5rem;
+position: relative;
+border: 1px solid #dedede;
+}
+
+td.active {
+background-color: rgba(255,255,255,0.6);
+}
+
+.sticky-header th, .sticky-table th {
+border-bottom: 2px solid rgba(0,0,0,0.1);
+padding-right: 1em;
+padding-right: 1rem;
+text-align: left;
+background-color: rgba(255,255,255,0.8);
+}
+
+.cols-2 td {
+width: 50%;
+}
+
+.cols-3 td {
+width: 33.3333%;
+}
+
+.cols-4 td {
+width: 25%;
+}
+
+.cols-5 td {
+width: 20%;
+}
+
+.cols-6 td {
+width: 16.6666%;
+}
+
+
+/* Layout stuff */
+
+#header, #main, #footer, .container, .region, .panel-pane, .views-row, .view-header, .view-footer, .block, ul.menu li {
+position: relative;
+}
+
+#main {
+min-height: 400px;
+padding: 0 0 1.5em;
+padding: 0 0 1.5rem;
+}
+
+#footer {
+padding: 1.5em 0;
+padding: 1.5rem 0;
+}
+
+/* menus and item lists */
+.item-list ul, .item-list ul li, ul.menu, ul.menu li, ul.inline li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+ul.menu ul.menu {
+margin: 0 0 0 1em;
+margin: 0 0 0 1rem;
+}
+
+ul.inline {
+clear: both;
+}
+
+
+/* Navigation */
+
+.region-navigation ul.menu ul.menu {
+position:absolute;
+z-index:2;
+margin:0;
+width:250px
+}
+
+.region-navigation ul.menu ul.menu {
+display: none;
+}
+
+.region-navigation ul.menu li:hover ul.menu, .region-navigation ul.menu li:active ul.menu {
+display:block;
+}
+
+.region-navigation ul.menu ul.menu li {
+width:100%
+}
+
+.region-navigation li.expanded:after {
+content: "▾";
+font-size: 12px;
+padding: 0;
+position: absolute;
+top: 0;
+right: 0;
+color: #fff;
+}
+
+/* admin tabs */
+.tabs-wrapper {
+margin: 1em 0 0;
+margin: 1rem 0 0;
+}
+
+/* tags */
+.field-name-field-tags {
+margin: 0 0 1.5em;
+margin: 0 0 1.5rem;
+}
+
+.field-name-field-tags .field-item {
+margin: 0 1em 0 0;
+margin: 0 1rem 0 0;
+}
+
+.field-name-field-tags div {
+display: inline;
+}
+
+
+/* FORMS */
+
+input, input[type="password"], input[type="text"], input[type="email"], textarea {
+line-height: 1.1em;
+padding: 8px 8px 7px;
+height: auto;
+border-radius: 3px;
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+border: 1px solid rgba(0, 0, 0, 0.2);
+max-width: 100%;
+font-size: 1em;
+font-size: 0.875rem;
+}
+
+textarea {
+line-height: 1.5em;
+}
+
+input[type="submit"] {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 0.85em;
+font-size: 0.85rem;
+padding: 8px 25px;
+border-radius: 5px;
+background: #999;
+color: white;
+margin: 15px 10px 0 0;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+input[type="submit"]:hover {
+background: #888;
+}
+
+input[type="submit"]:active {
+padding: 9px 25px 7px;
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+background: #777;
+}
+
+html.js input.form-autocomplete {
+background-position: 100% 9px;
+}
+
+html.js input.throbbing {
+background-position: 100% -18px;
+}
+
+.form-item label {
+margin: 0 0 5px;
+}
+
+.form-item .description {
+padding: 5px;
+}
+
+/* Per Safari’s CSS Reference: 
+https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariCSSRef/Articles/StandardCSSProperties.html
+iOS changes the appearance of buttons & controls to resemble a native apple UI. 
+Add this code for comment & search forms to retain custom CSS styles:  */
+input[type="submit"], input[type="password"], input[type="text"], input[type="email"] {
+-webkit-appearance:none;
+}
+
+
+/* Drupal-specific */
+.views-row, .block {
+position: relative;
+}
+
+.views-row {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.views-row, .view-header, .view-footer, .view-filters {
+padding: 1em 0;
+padding: 1rem 0;
+}
+
+.field-label, .views-label {
+font-weight: bold;
+font-weight: 700;
+}
+
+.views-field-edit-node, .edit-link {
+position: absolute;
+top: 7px;
+right: 7px;
+font-size: 11px;
+z-index: 2;
+}
+
+th.views-field-edit-node, td.views-field-edit-node {
+position: relative;
+top: auto;
+right: auto;
+text-align: right;
+}
+
+div.messages, div.breadcrumb {
+margin: 1.5em 0;
+margin: 1.5rem 0;
+}
+
+div.breadcrumb {
+padding: 1em 0;
+padding: 1rem 0;
+text-transform: uppercase;
+font-size: 0.75em;
+font-size: 0.75rem;
+}
+
+ul.contextual-links li a {
+font-size: 12px !important;
+font-family: sans-serif !important;
+padding: 0.25em 1em 0.25em 0.5em !important;
+}
+
+
+/* A modern grid / flexbox */
+
+.group {
+position: relative;
+display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+display: -ms-flexbox;           /* TWEENER - IE 10 */
+display: -webkit-flex;          /* NEW - Chrome */
+display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.group > div {
+margin: 0;
+padding: 1em;
+padding: 1rem;
+}
+
+.group > div:last-child {
+margin-right: 0;
+}

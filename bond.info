@@ -1,0 +1,25 @@
+name = bond
+description = Bond base theme. From RADIANT.DIGITAL with love.
+core = 7.x
+engine = phptemplate
+
+; ADD CSS
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/custom.css
+stylesheets[all][] = css/responsive.css
+
+; JAVASCRIPT
+scripts[] = js/jquery.responsive-tables.js
+scripts[] = js/custom.js
+
+regions[navigation]     = Navigation
+regions[header]         = Header
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[content_bottom] = Content Bottom
+regions[footer]         = Footer
+
