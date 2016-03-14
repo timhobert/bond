@@ -1,5 +1,4 @@
 <div id="page-wrapper">
-
 	<?php if (!empty($page['navigation'])): ?>
 		<nav id="navigation" role="navigation" class="navigation clearfix">
 			<div class="container">
@@ -7,11 +6,9 @@
 			</div>
 		</nav>
 	<?php endif; ?>
-	
 	<?php // if ($page['header']): ?>
 		<header id="header" role="banner" class="clearfix">
 			<div class="container">
-
 				<?php if ($logo): ?>
 					<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" id="logo">
 						<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -34,7 +31,6 @@
 			</div>
 		</header>
 	<?php // endif; ?>
-
 	<?php if ($page['highlighted']): ?>
 		<div id="highlighted" class="clearfix">
 			<div class="container">
@@ -42,59 +38,48 @@
 			</div>
 		</div>
 	<?php endif; ?>
-	
 	<section id="main" role="main" class="main clearfix">
 		<div class="container">
-
 			<?php print $messages; ?>
 			<?php print render($page['help']); ?>
 			<?php print $breadcrumb; ?>
-
 			<div class="content-wrapper">
 				<?php if (!empty($tabs['#primary'])): ?>
 					<div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div>
 				<?php endif; ?>
-		
 				<?php if ($action_links): ?>
 					<ul class="action-links"><?php print render($action_links); ?></ul>
 				<?php endif; ?>
-		
 				<?php print render($title_prefix); ?>
 					<?php if ($title): ?>
 						<h1 class="title" id="page-title"><?php print $title; ?></h1>
 					<?php endif; ?>
 				<?php print render($title_suffix); ?>
-		
 				<?php print render($page['content']); ?>
 			</div>
-
 			<?php if (!empty($page['sidebar_first'])): ?>
-				<aside id="sidebar-first" role="complementary" class="sidebar clearfix">
+				<aside id="sidebar-first" role="complementary" class="sidebar">
 					<?php print render($page['sidebar_first']); ?>
 				</aside>
 			<?php endif; ?>
-
 			<?php if (!empty($page['sidebar_second'])): ?>
-				<aside id="sidebar-second" role="complementary" class="sidebar clearfix">
+				<aside id="sidebar-second" role="complementary" class="sidebar">
 					<?php print render($page['sidebar_second']); ?>
 				</aside>
 			<?php endif; ?>
-
-			<?php if ($page['content_bottom']): ?>
-				<div id="content-bottom">
-					<div class="container">
-						<?php print render($page['content_bottom']); ?>
-					</div>
-				</div>
-			<?php endif; ?>
 		</div>
 	</section>
-
+	<?php if ($page['content_bottom']): ?>
+		<div id="content-bottom" role="complementary" class="content-bottom clearfix">
+			<div class="container">
+				<?php print render($page['content_bottom']); ?>
+			</div>
+		</div>
+	<?php endif; ?>
 	<footer id="footer" role="contentinfo">
 		<div class="container">
 			<?php print render($page['footer']); ?>
 			<?php print $feed_icons; ?>
 		</div>
 	</footer>
-
 </div>
