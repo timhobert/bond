@@ -101,6 +101,10 @@ font-weight: 700;
 line-height: 1.2em;
 }
 
+h5 {
+font-size: 1rem;
+}
+
 p, table, .by-line, .field {
 margin: 0 0 1.5em;
 margin: 0 0 1.5rem;
@@ -319,6 +323,10 @@ display: inline;
 
 
 /* FORMS */
+
+form div {
+max-width: 100%;
+}
 
 input, input[type="password"], input[type="text"], input[type="email"], textarea {
 line-height: 1.1em;
