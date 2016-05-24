@@ -61,7 +61,7 @@ ul.tabs.primary {
 	font-size: 0.75em;
 	margin: 0;
 	padding: 0;
-	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 ul.tabs.primary li {
@@ -75,11 +75,11 @@ ul.tabs.primary li a {
 	border-radius: 3px 3px 0 0;
 	text-transform: uppercase;
 	display: block;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-	filter: alpha(opacity=60);
-	-moz-opacity: 0.6;
-	-khtml-opacity: 0.6;
-	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
 }
 
 ul.tabs.primary li a.active {
@@ -89,5 +89,9 @@ ul.tabs.primary li a.active {
 }
 
 ul.tabs.primary li.active a, ul.tabs.primary li a:hover, ul.tabs.primary li a:active {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
 	opacity: 1;
 }

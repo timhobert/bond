@@ -10,7 +10,7 @@ stylesheets[all][] = css/custom.css
 stylesheets[all][] = css/responsive.css
 
 ; JAVASCRIPT
-scripts[] = js/jquery.responsive-tables.js
+;scripts[] = js/jquery.responsive-tables.js
 scripts[] = js/custom.js
 
 regions[navigation]     = Navigation

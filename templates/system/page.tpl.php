@@ -2,13 +2,6 @@
 	<?php if (!empty($page['navigation'])): ?>
 		<nav id="navigation" role="navigation" class="navigation clearfix">
 			<div class="container">
-				<?php print render($page['navigation']); ?>
-			</div>
-		</nav>
-	<?php endif; ?>
-	<?php // if ($page['header']): ?>
-		<header id="header" role="banner" class="clearfix">
-			<div class="container">
 				<?php if ($logo): ?>
 					<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" id="logo">
 						<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -26,13 +19,19 @@
 						<?php endif; ?>
 					</hgroup>
 				<?php endif; ?>
-
+				<?php print render($page['navigation']); ?>
+			</div>
+		</nav>
+	<?php endif; ?>
+	<?php // if ($page['header']): ?>
+		<header id="header" role="banner" class="header clearfix">
+			<div class="container">
 				<?php print render($page['header']); ?>
 			</div>
 		</header>
 	<?php // endif; ?>
 	<?php if ($page['highlighted']): ?>
-		<div id="highlighted" class="clearfix">
+		<div id="highlighted" class="highlighted clearfix">
 			<div class="container">
 				<?php print render($page['highlighted']); ?>
 			</div>
@@ -58,12 +57,12 @@
 				<?php print render($page['content']); ?>
 			</div>
 			<?php if (!empty($page['sidebar_first'])): ?>
-				<aside id="sidebar-first" role="complementary" class="sidebar">
+				<aside id="sidebar-first" role="complementary" class="sidebar-first sidebar">
 					<?php print render($page['sidebar_first']); ?>
 				</aside>
 			<?php endif; ?>
 			<?php if (!empty($page['sidebar_second'])): ?>
-				<aside id="sidebar-second" role="complementary" class="sidebar">
+				<aside id="sidebar-second" role="complementary" class="sidebar-second sidebar">
 					<?php print render($page['sidebar_second']); ?>
 				</aside>
 			<?php endif; ?>
@@ -76,7 +75,7 @@
 			</div>
 		</div>
 	<?php endif; ?>
-	<footer id="footer" role="contentinfo">
+	<footer id="footer" role="contentinfo" class="footer clearfix">
 		<div class="container">
 			<?php print render($page['footer']); ?>
 			<?php print $feed_icons; ?>

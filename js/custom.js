@@ -35,14 +35,14 @@
 
 
   /* Responsive tables, per jquery.responsive-tables.js in the /js directory of this theme */
-  Drupal.behaviors.responsiveTables = {
-    attach: function(context) {
-      $(document).ready(function(){
-        // Target the tables, but not the calendar table, which has a class of .full
-        $('table').not('.full').responsiveTables();
-      });
-    }
-  };
+  // Drupal.behaviors.responsiveTables = {
+  //   attach: function(context) {
+  //     $(document).ready(function(){
+  //       // Target the tables, but not the calendar table, which has a class of .full
+  //       $('table').not('.full').responsiveTables();
+  //     });
+  //   }
+  // };
 
 
   // Your JavaScript code goes here:
