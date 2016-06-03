@@ -79,6 +79,7 @@
 		<div class="container">
 			<?php print render($page['footer']); ?>
 			<?php print $feed_icons; ?>
+			<div class="hidden div-credit">Dev by <a href="http://www.div.digital" target="_blank" title="Div, Drupal Web Developers" alt="Div, Drupal Web Developers">Div</a></div>
 		</div>
 	</footer>
 </div>
