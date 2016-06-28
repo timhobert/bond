@@ -384,6 +384,12 @@ margin: 0 0 5px;
 padding: 5px;
 }
 
+.webform-confirmation {
+margin: 0 0 1.5em;
+margin: 0 0 1.5rem;
+color: green;
+}
+
 /* Per Safari’s CSS Reference: 
 https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariCSSRef/Articles/StandardCSSProperties.html
 iOS changes the appearance of buttons & controls to resemble a native apple UI. 
