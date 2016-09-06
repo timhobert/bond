@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 font-weight: bold;
 line-height: 1.1em;
 margin: 0.5em 0;
-margin: 0.5rem 0;
+margin: 1.5rem 0;
 padding: 0;
 }
 
@@ -112,6 +112,7 @@ margin: 0 0 1.5rem;
 
 a {
 text-decoration: none;
+color: #2A5DB0; 	/* link color in Gmail; Google tested 40 link colors and this color won */
 }
 
 a:focus {
@@ -242,14 +243,13 @@ position: relative;
 }
 
 #main {
-min-height: 400px;
-padding: 0 0 1.5em;
-padding: 0 0 1.5rem;
+	min-height: 400px;
+	padding: 0;
 }
 
 #footer {
-padding: 1.5em 0;
-padding: 1.5rem 0;
+	padding: 1.5em 0;
+	padding: 1.5rem 0;
 }
 
 /* menus and item lists */
@@ -385,12 +385,15 @@ padding: 5px;
 }
 
 .webform-confirmation {
-margin: 0 0 1.5em;
-margin: 0 0 1.5rem;
-color: green;
+  padding: 1.5em;
+  padding: 1.5rem;
+  background: #90ee90;  /*lightgreen*/
+  border: 1px solid #80d480; /*slightly darker green*/
+  margin: 0 0 1.5em 0;
 }
 
-/* Per Safari’s CSS Reference: 
+
+/* Per Safariâ€™s CSS Reference: 
 https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariCSSRef/Articles/StandardCSSProperties.html
 iOS changes the appearance of buttons & controls to resemble a native apple UI. 
 Add this code for comment & search forms to retain custom CSS styles:  */
@@ -503,5 +506,3 @@ html[xmlns] .cols {
 .cols-6 > .col:nth-of-type(6n+1) {
 	clear: left;
 }
-
-

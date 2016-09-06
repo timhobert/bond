@@ -33,15 +33,16 @@
 	}
 
 
-	.float-left, .float-right, section, .block, .region-footer > div, #logo, .region, .cols > .col {
+	.float-left, .float-right, section, .block, .region .block, .footer .block, .region-footer > div, #logo, .region, .cols > .col, .region-navigation, .sidebar-second .content-wrapper, .sidebar-first .content-wrapper, .sidebar, .sidebar-first .sidebar-first, .sidebar-second .sidebar-second {
 	float: none;
 	width: 100%;
 	max-width: 100%;
 	min-height: inherit;
 	height: auto;
 	padding: 0;
-	margin: 0 0 1.5em;
+	margin: 0;
 	text-align: left;
+	border: none;
 	}
 
 	#content {
