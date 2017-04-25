@@ -385,15 +385,15 @@ padding: 5px;
 }
 
 .webform-confirmation {
-  padding: 1.5em;
-  padding: 1.5rem;
-  background: #90ee90;  /*lightgreen*/
-  border: 1px solid #80d480; /*slightly darker green*/
-  margin: 0 0 1.5em 0;
+    padding: 1.5em;
+    padding: 1.5rem;
+    background: #befdd7;		/*lightgreen*/
+    border: 1px solid #a7eac2;  /*slightly darker green*/
+    margin: 0 0 1.5em 0;
 }
 
 
-/* Per Safariâ€™s CSS Reference: 
+/* Per Safari CSS Reference: 
 https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariCSSRef/Articles/StandardCSSProperties.html
 iOS changes the appearance of buttons & controls to resemble a native apple UI. 
 Add this code for comment & search forms to retain custom CSS styles:  */
