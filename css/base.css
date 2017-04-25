@@ -44,24 +44,6 @@ display: table;
 clear: both;
 }
 
-/*
-
-	2do: Marcus' clearfix 
-
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix {
-	display: inline-block;
-}
-*/
-
 
 /* Corrects overflow displayed oddly in IE9 */
 svg: not(: root) {
@@ -72,30 +54,30 @@ overflow: hidden;
 /* FONTS */
 h1, h2, h3, h4, h5, h6 {
 font-weight: bold;
-line-height: 1.1em;
+line-height: 1.2em;
 margin: 0.5em 0;
 margin: 1.5rem 0;
 padding: 0;
 }
 
 h1 {
-font-size: 2.5em;
-font-size: 2.5rem;
+font-size: 2em;
+font-size: 2rem;
 }
 
 h2, .view-grouping-header {
-font-size: 1.75em;
-font-size: 1.75rem;
-}
-
-h3 {
 font-size: 1.5em;
 font-size: 1.5rem;
 }
 
+h3 {
+font-size: 1.3em;
+font-size: 1.3rem;
+}
+
 h4, h5, h6 {
-font-size: 1.25em;
-font-size: 1.25rem;
+font-size: 1.2em;
+font-size: 1.2rem;
 font-weight: bold;
 font-weight: 700;
 line-height: 1.2em;
