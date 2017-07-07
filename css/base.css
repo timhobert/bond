@@ -165,8 +165,9 @@ padding: 1rem;
 }
 
 table {
-max-width: 100%;
+table-layout:fixed;
 width: 100%;
+max-width: 100%;
 font-size: 0.875em;
 font-size: 0.875rem;
 }
