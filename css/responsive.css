@@ -22,12 +22,17 @@
 /* iPad portrait and smaller ----------- */
 @media screen and (max-width: 768px) {
 
+	body {
+	color: #333333;
+	font-size: 1em;
+	font-size: 1rem;
+	}
 
 	.container {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 1em;
-	padding: 0 1rem;
+	padding: 0 1.5em;
+	padding: 0 1.5rem;
 	max-width: inherit;
 	min-width: inherit;
 	}
